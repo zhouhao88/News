@@ -25,9 +25,11 @@ static NSString * const reuseIdentifier = @"HeadLine";
 
 -(void)viewDidLayoutSubviews
 {
+    
     self.collectionView.backgroundColor = [UIColor whiteColor];
-
+    //滚动方向
     self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    //item大小
     self.layout.itemSize = self.collectionView.bounds.size;
     // 隐藏滚动条
     self.collectionView.showsHorizontalScrollIndicator = NO;
