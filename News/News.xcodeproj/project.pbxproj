@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B27079E1C806F02005B2146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B27079D1C806F02005B2146 /* main.m */; };
 		3B2707A11C806F02005B2146 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2707A01C806F02005B2146 /* AppDelegate.m */; };
-		3B2707A41C806F02005B2146 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2707A31C806F02005B2146 /* ViewController.m */; };
-		3B2707A71C806F03005B2146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2707A51C806F03005B2146 /* Main.storyboard */; };
 		3B2707A91C806F03005B2146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2707A81C806F03005B2146 /* Assets.xcassets */; };
 		3B2707AC1C806F03005B2146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2707AA1C806F03005B2146 /* LaunchScreen.storyboard */; };
+		3B2707B81C807906005B2146 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2707B71C807906005B2146 /* News.storyboard */; };
+		3B2707BB1C807C6C005B2146 /* CZNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2707BA1C807C6C005B2146 /* CZNewsController.m */; };
+		3B2707BE1C807E8E005B2146 /* CZHeadLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2707BD1C807E8E005B2146 /* CZHeadLineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		3B27079D1C806F02005B2146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B27079F1C806F02005B2146 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B2707A01C806F02005B2146 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B2707A21C806F02005B2146 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B2707A31C806F02005B2146 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3B2707A61C806F03005B2146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B2707A81C806F03005B2146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B2707AB1C806F03005B2146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B2707AD1C806F03005B2146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2707B71C807906005B2146 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		3B2707B91C807C6C005B2146 /* CZNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZNewsController.h; path = ../View/CZNewsController.h; sourceTree = "<group>"; };
+		3B2707BA1C807C6C005B2146 /* CZNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZNewsController.m; path = ../View/CZNewsController.m; sourceTree = "<group>"; };
+		3B2707BC1C807E8E005B2146 /* CZHeadLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHeadLineController.h; sourceTree = "<group>"; };
+		3B2707BD1C807E8E005B2146 /* CZHeadLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZHeadLineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +61,9 @@
 		3B27079B1C806F02005B2146 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				3B2707B31C807894005B2146 /* News */,
 				3B27079F1C806F02005B2146 /* AppDelegate.h */,
 				3B2707A01C806F02005B2146 /* AppDelegate.m */,
-				3B2707A21C806F02005B2146 /* ViewController.h */,
-				3B2707A31C806F02005B2146 /* ViewController.m */,
-				3B2707A51C806F03005B2146 /* Main.storyboard */,
 				3B2707A81C806F03005B2146 /* Assets.xcassets */,
 				3B2707AA1C806F03005B2146 /* LaunchScreen.storyboard */,
 				3B2707AD1C806F03005B2146 /* Info.plist */,
@@ -77,6 +78,42 @@
 				3B27079D1C806F02005B2146 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B2707B31C807894005B2146 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3B2707B41C807894005B2146 /* Controller */,
+				3B2707B51C807894005B2146 /* Model */,
+				3B2707B61C807894005B2146 /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		3B2707B41C807894005B2146 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B2707B91C807C6C005B2146 /* CZNewsController.h */,
+				3B2707BA1C807C6C005B2146 /* CZNewsController.m */,
+				3B2707BC1C807E8E005B2146 /* CZHeadLineController.h */,
+				3B2707BD1C807E8E005B2146 /* CZHeadLineController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B2707B51C807894005B2146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2707B61C807894005B2146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B2707B71C807906005B2146 /* News.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +142,7 @@
 		3B2707911C806F02005B2146 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = itcast;
 				TargetAttributes = {
@@ -137,8 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2707AC1C806F03005B2146 /* LaunchScreen.storyboard in Resources */,
+				3B2707B81C807906005B2146 /* News.storyboard in Resources */,
 				3B2707A91C806F03005B2146 /* Assets.xcassets in Resources */,
-				3B2707A71C806F03005B2146 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2707A41C806F02005B2146 /* ViewController.m in Sources */,
+				3B2707BE1C807E8E005B2146 /* CZHeadLineController.m in Sources */,
 				3B2707A11C806F02005B2146 /* AppDelegate.m in Sources */,
 				3B27079E1C806F02005B2146 /* main.m in Sources */,
+				3B2707BB1C807C6C005B2146 /* CZNewsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3B2707A51C806F03005B2146 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B2707A61C806F03005B2146 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B2707AA1C806F03005B2146 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
